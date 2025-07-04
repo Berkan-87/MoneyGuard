@@ -9,6 +9,7 @@ export default defineConfig({
       components: path.resolve(__dirname, './src/components'),
       hooks: path.resolve(__dirname, './src/hooks'), 
       helpers: path.resolve(__dirname, './src/helpers'),
+      base: '/',
     },
   },
 });
