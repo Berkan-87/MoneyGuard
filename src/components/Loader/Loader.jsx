@@ -1,4 +1,4 @@
-import { Watch } from 'react-loader-spinner';
+import { ClipLoader } from 'react-spinners';
 import s from './Loader.module.css';
 
 const Loader = () => {
@@ -6,15 +6,11 @@ const Loader = () => {
     <>
       <div className={s.backdrop}></div>
       <div className={s.loader}>
-        <Watch
-          visible={true}
-          height="80"
-          width="80"
-          radius="48"
+        <ClipLoader
           color="#ffd8d0"
-          ariaLabel="watch-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
+          size={80}
+          speedMultiplier={0.9}
+          aria-label="loading-spinner"
         />
       </div>
     </>
