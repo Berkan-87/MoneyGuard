@@ -108,7 +108,7 @@ const DoughnutChart = () => {
                   No transactions,
                   <br /> your balance is:
                 </p>
-                <p> ₴ {formattedBalance}</p>
+                <p>{formattedBalance}</p>
               </div>
               <Doughnut
                 className={css.doughnut}
@@ -125,7 +125,7 @@ const DoughnutChart = () => {
                   balance < 0 ? css.negativeBalance : css.positiveBalance
                 }`}
               >
-                ₴ {formattedBalance}
+               <p>{formattedBalance}</p>
               </div>
               <Doughnut
                 className={css.doughnut}

@@ -7,10 +7,13 @@ export const getformatNumber = number =>
     .replace(/\s/g, ' ')
     .replace(',', '.');
 
+
+// helpers/getformatNumber.js
+
 export const getformattedBalance = balance =>
-  balance
-    .toLocaleString('uk-UA', {
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2,
-    })
-    .replace(/,/, '.');
+  balance.toLocaleString('tr-TR', {
+    style: 'currency',
+    currency: 'TRY',
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  });
