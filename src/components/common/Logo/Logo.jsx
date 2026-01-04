@@ -6,10 +6,10 @@ const Logo = ({ type }) => {
     <div className={clsx(s.logo, type === 'header' && s.headerLogo)}>
       <img
         // style={{ width, height, fontSize }}
-        src="/money-guard.svg"
-        alt="Money Guard Logo"
+        src="goktas-logo.svg"
+        alt="Göktaş Logo"
       />
-      <h2 className={s.textLogo}>Money Guard</h2>
+      <h2 className={s.textLogo}>Göktaş</h2>
     </div>
   );
 };
